@@ -10,12 +10,11 @@ def prevent_idle(screenofftime: int):
         # pyautogui.moveTo(x - 2, y)   # Move 1 pixel to the right
 
         pyautogui.keyDown('volumeup')
+        pyautogui.keyUp('volumeup')
         time.sleep(0.5)
+        pyautogui.keyDown('volumedown')
         pyautogui.keyUp('volumedown')
-        time.sleep(0.7)
-        pyautogui.keyDown('volumeup')
         time.sleep(0.5)
-        pyautogui.keyUp('volumedown')
 
 
         # Wait for 295 seconds, since my screen goes off in 5 min
@@ -24,5 +23,6 @@ def prevent_idle(screenofftime: int):
 
 if __name__ == "__main__":
     screenofftime = (60*5) - 5
-    prevent_idle(screenofftime)
+    # prevent_idle(screenofftime)
+    prevent_idle(10)
 

@@ -4,11 +4,14 @@ Ever had an annoying problem where your device is administerd by company admin a
 Thats for safety reasons, but what if you are home alone and there is no one to peer into your screen and steal company secrets?
 
 Easy solution: buy a mouse mover!, place your mouse on it and voila, your mouse keeps movind and the device doesnt lock...
+ or
+Keep youtube running on another screen 
+
 
 But hey!...
 
 
-What if make the OS simulate that?
+What if we make the OS simulate that?
 
 Presenting......
 
@@ -21,12 +24,15 @@ or you can use keyboard for regulated keypresses.
 
 
 In this repo we use the volume keys to keep the screen awake, thereby not disrupting the users typing experience (given that you are probably coding)
+
+
 The volume will increase and decrease by 2 points, every n seconds. This n is determined by the user
 # Imports
 Uses
 
 - python 3.13
 - pyautogui
+- pyinstaller
 
 # Build
 
